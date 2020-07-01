@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingTop="@dimen/px238" android:paddingBottom="@dimen/px153" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/px102" android:paddingEnd="@dimen/px102">
+    <com.toycloud.launcher.view.SegmentCardView android:id="@+id/img_ets" android:background="@drawable/bg_ets" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <View android:id="@+id/view_line" android:visibility="gone" android:layout_width="@dimen/px35" android:layout_height="match_parent"/>
+    <com.toycloud.launcher.view.SegmentCardView android:id="@+id/img_zxw" android:background="@drawable/bg_zxw" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+</LinearLayout>

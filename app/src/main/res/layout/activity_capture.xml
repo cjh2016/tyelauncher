@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@+id/preview_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.mining.app.zxing.view.ViewfinderView android:id="@+id/viewfinder_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:background="#ff5795bb" android:layout_width="match_parent" android:layout_height="@dimen/px110" android:layout_alignParentTop="true">
+            <ImageView android:id="@+id/left_btn" android:layout_width="@dimen/px56" android:layout_height="@dimen/px56" android:layout_marginLeft="@dimen/px24" android:layout_marginRight="@dimen/px48" android:src="@drawable/nav_back_selector" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/px36" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/title" android:paddingLeft="@dimen/px36" android:paddingRight="@dimen/px36" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="扫描二维码" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/flash_switch" android:layout_width="@dimen/px64" android:layout_height="@dimen/px64" android:layout_marginLeft="@dimen/px24" android:layout_marginRight="@dimen/px48" android:src="@drawable/sgd02" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.gc.materialdesign.views.ButtonRectangle android:textColor="#ffffffff" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/manual_input" android:background="#1e88e5" android:layout_width="@dimen/px300" android:layout_height="@dimen/px150" android:layout_marginBottom="@dimen/px120" android:text="手动输入编号" android:translationZ="0dp" android:elevation="0dp"/>
+</FrameLayout>

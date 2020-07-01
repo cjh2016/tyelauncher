@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:background="@color/user_center_background_color" android:paddingTop="25dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.toycloud.launcher.view.EditableMenuTitleView android:textSize="17sp" android:textColor="#333333" android:id="@+id/menu_report" android:background="@color/white" android:paddingLeft="16dp" android:paddingTop="24dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" card_view:title="我的报告" card_view:editable="false"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/user_study_report_ll" android:background="#ffffff" android:paddingTop="12dp" android:paddingBottom="28dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_below="@+id/menu_report">
+            <FrameLayout android:id="@+id/middle_school_study_daily_fl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="22sp" android:textColor="#7a6adb" android:id="@+id/study_daily_tv" android:background="@drawable/image_high" android:paddingLeft="12dp" android:paddingTop="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/study_daily"/>
+                <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/study_report_dot_iv" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:src="@drawable/shape_dot"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/study_report_primary_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_primary"/>
+            <View android:background="@color/colorTransparent" android:layout_width="65dp" android:layout_height="1px"/>
+            <TextView android:textSize="22sp" android:textColor="#03b1ed" android:id="@+id/study_report_tv" android:background="@drawable/image_course" android:paddingLeft="12dp" android:paddingTop="18dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/study_report"/>
+        </LinearLayout>
+        <com.toycloud.launcher.view.EditableMenuTitleView android:id="@+id/menu_user_info" android:paddingLeft="16dp" android:paddingTop="24dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/user_study_report_ll" card_view:title="个人信息" card_view:editable="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/user_info_ll" android:background="#ffffff" android:paddingLeft="33dp" android:paddingTop="25dp" android:paddingRight="16dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="268dp" android:layout_marginBottom="12dp" android:layout_below="@+id/menu_user_info">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp">
+                <TextView android:textSize="15sp" android:textColor="@color/info_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="姓名："/>
+                <TextView android:textSize="15sp" android:textColor="@color/generic_text_color" android:id="@+id/user_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="15sp" android:textColor="@color/info_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="年级："/>
+                <TextView android:textSize="15sp" android:textColor="@color/generic_text_color" android:id="@+id/grade_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp">
+                <TextView android:textSize="15sp" android:textColor="@color/info_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="城市：" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="15sp" android:textColor="@color/generic_text_color" android:id="@+id/region" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="15sp" android:textColor="@color/info_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学校：" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="15sp" android:textColor="@color/generic_text_color" android:ellipsize="end" android:id="@+id/school" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp">
+                <TextView android:textSize="15sp" android:textColor="@color/info_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性别：" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="15sp" android:textColor="@color/generic_text_color" android:id="@+id/sex" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="15sp" android:textColor="@color/info_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生日：" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="15sp" android:textColor="@color/generic_text_color" android:id="@+id/birthday" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/info_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="班级：" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="15sp" android:textColor="@color/generic_text_color" android:id="@+id/class_num" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="15sp" android:textColor="@color/info_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学号：" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="15sp" android:textColor="@color/generic_text_color" android:ellipsize="end" android:id="@+id/student_num" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.toycloud.launcher.view.EditableMenuTitleView android:id="@+id/menu_books" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/user_info_ll" card_view:title="我的教材" card_view:editable="true"/>
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@+id/jc_list" android:background="#ffffffff" android:paddingLeft="30dp" android:paddingTop="4dp" android:paddingBottom="10dp" android:visibility="gone" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/menu_books" card_view:cardElevation="0dp"/>
+        <com.toycloud.launcher.view.EditableMenuTitleView android:id="@+id/menu_more" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/jc_list" card_view:title="更多" card_view:editable="false"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/rlv_apps" android:background="@color/colorWhite" android:paddingLeft="30dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/menu_more"/>
+    </RelativeLayout>
+</RelativeLayout>

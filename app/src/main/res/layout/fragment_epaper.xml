@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_main" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="55dp" android:layout_marginTop="118dp" android:layout_marginBottom="80dp" android:splitMotionEvents="false">
+        <LinearLayout android:orientation="vertical" android:id="@+id/epaper" android:layout_width="437dp" android:layout_height="match_parent" android:splitMotionEvents="false">
+            <ImageView android:id="@+id/iv_wrong_note_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cuotiben"/>
+            <View android:layout_width="match_parent" android:layout_height="18dp"/>
+            <ImageView android:id="@+id/img_micro_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mingshiweike"/>
+            <ImageView android:id="@+id/img21" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/tongbulianxi" android:scaleType="fitXY" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="18dp" android:layout_weight="1" android:splitMotionEvents="false">
+            <ImageView android:id="@+id/iv_search_by_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wenzuoye"/>
+            <View android:layout_width="match_parent" android:layout_height="18dp"/>
+            <ImageView android:id="@+id/iv_translate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zhongyinghuyi"/>
+            <View android:layout_width="match_parent" android:layout_height="18dp"/>
+            <ImageView android:id="@+id/iv_learning_english" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qingjingyingyu"/>
+            <ImageView android:id="@+id/img22" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/px338" android:src="@drawable/beizhanzhonggaokao" android:scaleType="fitXY"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

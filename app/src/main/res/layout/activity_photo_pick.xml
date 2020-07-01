@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:id="@+id/slidingUpPanelLayout" android:layout_width="match_parent" android:layout_height="match_parent" card_view:umanoPanelHeight="48dp" card_view:umanoShadowHeight="4dp" card_view:umanoParallaxOffset="100dp" card_view:umanoDragView="@+id/dragView" card_view:umanoScrollableView="@+id/gallery_rv" card_view:umanoOverlay="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/dragView" android:background="#ffffff" android:focusable="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/view" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="@dimen/text_size_16sp" android:gravity="center_vertical" android:id="@+id/gallery" android:background="?android:attr/selectableItemBackground" android:paddingLeft="@dimen/layout_padding_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/gallery"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/gallery_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/view_refreshloadmorelistview_swiperefreshlayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <framework.hz.salmon.view.refreshable.LoadMoreListView android:id="@+id/view_refreshloadmorelistview_listView" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@null" android:text=""/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

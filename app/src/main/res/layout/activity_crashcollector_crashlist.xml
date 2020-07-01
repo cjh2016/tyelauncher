@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#6eb92b" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_crashcollector_title" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="崩溃列表"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/lv_crashcollector_crashlist" android:background="@android:color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:scrollingCache="true" android:cacheColorHint="@android:color/transparent" android:divider="#e7e7e7" android:dividerHeight="1dp" android:layout_weight="1"/>
+</LinearLayout>

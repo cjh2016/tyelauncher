@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/vstub_query_failed" android:layout="@layout/lib_view_layout_empty_tips" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:id="@+id/web_view_pb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2dp" android:max="100" android:progressDrawable="@drawable/lib_view_webview_progressbar_style" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+</FrameLayout>

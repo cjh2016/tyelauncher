@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_main" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/px102" android:layout_marginTop="@dimen/px262" android:layout_marginRight="@dimen/px102" android:layout_marginBottom="@dimen/px208" android:splitMotionEvents="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/px18" android:layout_weight="1" android:splitMotionEvents="false">
+            <ImageView android:id="@+id/iv_love_words" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/px18" android:src="@drawable/lanucher_love_words" android:scaleType="fitXY" android:layout_weight="1"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px18" android:splitMotionEvents="false">
+                <ImageView android:id="@+id/iv_recite" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/px18" android:src="@drawable/lanucher_beikewen" android:scaleType="fitXY" android:layout_weight="1"/>
+                <ImageView android:id="@+id/iv_trslt" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/px18" android:src="@drawable/lanucher_trsl" android:scaleType="fitXY" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/px18" android:layout_weight="1" android:splitMotionEvents="false">
+            <ImageView android:id="@+id/iv_oral_english" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/px18" android:src="@drawable/lanucher_oral_english" android:scaleType="fitXY" android:layout_weight="1"/>
+            <ImageView android:id="@+id/english" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px18" android:src="@drawable/lanucher_english" android:scaleType="fitXY"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

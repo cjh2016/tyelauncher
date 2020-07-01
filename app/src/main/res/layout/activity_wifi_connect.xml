@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/bj_firstselect_net" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/px200">
+            <TextView android:textSize="@dimen/px28" android:textColor="#000000" android:id="@+id/tv_wifistatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px40" android:layout_marginBottom="@dimen/px30" android:text="WLAN开启" android:layout_alignParentBottom="true"/>
+            <com.toycloud.launcher.view.MySwitchButton android:id="@+id/mb_wifiswitch" android:layout_width="@dimen/px88" android:layout_height="@dimen/px42" android:layout_marginRight="@dimen/px40" android:layout_marginBottom="@dimen/px30" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="@dimen/px1" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recy_list_wifi" android:background="#fff" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/px30" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/px28" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_nonet" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:text="要查看可用网络，请打开WLAN" android:layout_weight="1"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/px260">
+            <Button android:textSize="@dimen/px28" android:textColor="@color/nextstep_color_selector_net" android:gravity="center" android:id="@+id/tv_first_next" android:background="@drawable/nextstep_bg_selector" android:layout_width="@dimen/px240" android:layout_height="@dimen/px80" android:layout_marginTop="@dimen/px30" android:layout_marginBottom="@dimen/px150" android:text="立即使用" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

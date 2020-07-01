@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:background="@drawable/banner03" android:layout_width="match_parent" android:layout_height="@dimen/px410">
+                <TextView android:textSize="@dimen/px42" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px80" android:text="完善教材信息" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="@dimen/px40" android:paddingTop="@dimen/px30" android:paddingRight="@dimen/px100" android:paddingBottom="@dimen/px32" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingTop="@dimen/px32" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/chinese" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="@dimen/px122" android:layout_height="@dimen/px122" android:src="@drawable/jc_yw"/>
+                            <TextView android:textSize="@dimen/px32" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px8" android:layout_marginTop="@dimen/px12" android:text="语文" android:layout_alignParentRight="true"/>
+                            <TextView android:textSize="@dimen/px24" android:textColor="#ff666666" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px12" android:text="人民教育出版社"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/math" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px40">
+                            <ImageView android:layout_width="@dimen/px122" android:layout_height="@dimen/px122" android:src="@drawable/jc_sx"/>
+                            <TextView android:textSize="@dimen/px32" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px8" android:layout_marginTop="@dimen/px12" android:text="数学" android:layout_alignParentRight="true"/>
+                            <TextView android:textSize="@dimen/px24" android:textColor="#ff666666" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px12" android:text="人民教育出版社"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/english" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px40">
+                            <ImageView android:layout_width="@dimen/px122" android:layout_height="@dimen/px122" android:src="@drawable/jc_yy"/>
+                            <TextView android:textSize="@dimen/px32" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px8" android:layout_marginTop="@dimen/px12" android:text="英语" android:layout_alignParentRight="true"/>
+                            <TextView android:textSize="@dimen/px24" android:textColor="#ff666666" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px12" android:text="人民教育出版社"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textSize="@dimen/px35" android:textColor="#fff7f7f7" android:layout_gravity="center_horizontal" android:id="@+id/save" android:background="#ff008dfe" android:layout_width="@dimen/px600" android:layout_height="@dimen/px100" android:layout_marginTop="@dimen/px120" android:text="完成"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

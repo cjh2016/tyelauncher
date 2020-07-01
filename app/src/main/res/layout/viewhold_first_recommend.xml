@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_main" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@+id/first_page_viewstub" android:layout="@layout/viewhold_first_recommend_notlogin" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/viewhold_first_map"/>
+</FrameLayout>

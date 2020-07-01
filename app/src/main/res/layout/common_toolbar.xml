@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/common_toolbar_top" android:background="#ff5795bb" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" card_view:popupTheme="@style/ThemeOverlay.AppCompat.Light" card_view:navigationIcon="@drawable/nav_back_selector" card_view:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>

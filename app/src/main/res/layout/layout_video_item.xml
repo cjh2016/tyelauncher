@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/video" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px24">
+        <FrameLayout android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="@dimen/px190" android:layout_height="@dimen/px100" android:src="@drawable/img4" android:scaleType="centerInside"/>
+            <View android:background="@drawable/bofang_bg_selector" android:duplicateParentState="true" android:layout_width="@dimen/px190" android:layout_height="@dimen/px100"/>
+            <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="@dimen/px38" android:layout_height="@dimen/px42" android:src="@drawable/bofang_selector" android:scaleType="centerInside"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/px28" android:textColor="@drawable/bofang_txt_selector" android:layout_gravity="center_vertical" android:id="@+id/video_name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px10" android:text="个性化推荐1微课A"/>
+    </LinearLayout>
+</LinearLayout>

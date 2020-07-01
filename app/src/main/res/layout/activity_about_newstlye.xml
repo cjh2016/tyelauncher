@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rel_top" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/px409">
+        <RelativeLayout android:id="@+id/rel_login_up" android:background="@drawable/logintop_bar" android:layout_width="match_parent" android:layout_height="@dimen/px120">
+            <ImageView android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px30" android:layout_marginTop="@dimen/px50" android:src="@drawable/but_back"/>
+            <TextView android:textSize="@dimen/px36" android:textColor="#ffffffff" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="@dimen/px50" android:layout_marginTop="@dimen/px50" android:text="关于我们" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rel_login_up">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px50" android:src="@drawable/loginup_logo_icon" android:scaleType="centerInside"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/px32" android:textColor="#04abf2" android:gravity="center" android:id="@+id/tv_checkversion" android:layout_width="match_parent" android:layout_height="@dimen/px100" android:text="检查新版本" android:layout_below="@+id/rel_top"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px50" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/px28" android:textColor="#ff888888" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px48" android:layout_marginBottom="@dimen/px24" android:text="淘云科技 \10 0551-66666666 \10Copyright©2017 .\10 All Rights Reserved." android:layout_alignParentBottom="true" android:lineSpacingExtra="@dimen/px10"/>
+    </RelativeLayout>
+</RelativeLayout>

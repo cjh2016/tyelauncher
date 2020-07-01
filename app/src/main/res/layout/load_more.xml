@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/loadmore_view" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/pullup_icon" android:background="@drawable/pullup_icon_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/loading_icon" android:background="@drawable/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/loadstate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pullup_to_load" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/loadstate_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/loadstate_tv" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

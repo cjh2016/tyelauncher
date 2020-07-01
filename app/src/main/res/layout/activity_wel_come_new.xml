@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:background="@drawable/bj_welcome" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/px36" android:textColor="@color/white" android:gravity="center" android:id="@+id/welcome_tonextt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px340" android:text="欢迎使用讯飞学习机" android:layout_alignParentBottom="true"/>
+    <Button android:textSize="@dimen/px28" android:textColor="@color/nextstep_color_selector" android:id="@+id/bu_welcome_tonext" android:background="@drawable/nextstep_bg_selector_whitedefault" android:layout_width="@dimen/px240" android:layout_height="@dimen/px80" android:layout_marginBottom="@dimen/px180" android:text="下一步" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

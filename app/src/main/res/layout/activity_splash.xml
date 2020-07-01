@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/guideImage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <hz.framework.android.View.CirclePageIndicator android:id="@+id/indicator" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" card_view:strokeWidth="0dp" card_view:pageColor="#88808080"/>
+    <Button android:textSize="@dimen/px18" android:textColor="#ffffffff" android:id="@+id/btnHome" android:background="@drawable/btn_orange" android:visibility="gone" android:layout_width="140dp" android:layout_height="40dp" android:layout_marginBottom="60dp" android:text="立即体验" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

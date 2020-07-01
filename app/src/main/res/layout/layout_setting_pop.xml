@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/container_picker" android:background="@drawable/shape_pop_bg" android:layout_width="@dimen/px280" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px14" android:layout_marginRight="@dimen/px100" android:layout_centerInParent="true" android:elevation="@dimen/px5">
+    <RelativeLayout android:id="@+id/logout_layout" android:background="@drawable/white_top_corner" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/px80">
+        <TextView android:textSize="@dimen/px30" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/px60" android:layout_marginLeft="@dimen/px32" android:text="切换账号" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="@dimen/px32" android:layout_height="@dimen/px32" android:layout_marginRight="@dimen/px32" android:src="@drawable/arrow_right" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#fff2f2f2" android:layout_width="match_parent" android:layout_height="@dimen/px1" android:layout_marginLeft="@dimen/px32" android:layout_marginRight="@dimen/px32"/>
+    <RelativeLayout android:id="@+id/changePass_layout" android:background="#ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/px80">
+        <TextView android:textSize="@dimen/px30" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/px60" android:layout_marginLeft="@dimen/px32" android:text="修改密码" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="@dimen/px32" android:layout_height="@dimen/px32" android:layout_marginRight="@dimen/px32" android:src="@drawable/arrow_right" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#fff2f2f2" android:layout_width="match_parent" android:layout_height="@dimen/px1" android:layout_marginLeft="@dimen/px32" android:layout_marginRight="@dimen/px32"/>
+    <RelativeLayout android:id="@+id/feeback_layout" android:background="@drawable/white_bottom_corner" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/px80">
+        <TextView android:textSize="@dimen/px30" android:textColor="#333333" android:gravity="center" android:id="@+id/tv_feedback" android:layout_width="wrap_content" android:layout_height="@dimen/px60" android:layout_marginLeft="@dimen/px32" android:text="问题与建议" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="@dimen/px32" android:layout_height="@dimen/px32" android:layout_marginRight="@dimen/px32" android:src="@drawable/arrow_right" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/img_dot" android:visibility="gone" android:layout_width="@dimen/px16" android:layout_height="@dimen/px16" android:layout_marginTop="@dimen/px20" android:src="@drawable/shape_dot" android:layout_marginStart="@dimen/px30" android:layout_marginEnd="@dimen/px80" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

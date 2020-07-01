@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/px409">
+                <RelativeLayout android:id="@+id/rel_login_up" android:background="@drawable/logintop_bar" android:layout_width="match_parent" android:layout_height="@dimen/px130">
+                    <ImageView android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px30" android:src="@drawable/back_icon_selector" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/px36" android:textColor="#ffffffff" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="@dimen/px50" android:text="登录" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/px78" android:layout_below="@+id/rel_login_up">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px50" android:src="@drawable/iflytek_icon_title" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:paddingTop="@dimen/px78" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linear_username" android:background="@drawable/edit_bg_press" android:layout_width="@dimen/px620" android:layout_height="@dimen/px80">
+                    <ImageView android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:layout_marginLeft="@dimen/px24" android:src="@drawable/login_user" android:scaleType="centerInside"/>
+                    <framework.hz.salmon.view.AutoHiddenHintEditText android:textSize="@dimen/px28" android:textColor="#ff333333" android:textColorHint="#ffb4b7b9" android:id="@+id/username" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px28" android:hint="请输入账号" android:singleLine="true" android:maxLength="11" android:inputType="number" android:textCursorDrawable="@drawable/cursordrawable_black"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/red_color" android:gravity="left" android:id="@+id/tv_phone_format" android:paddingLeft="@dimen/px15" android:visibility="gone" android:layout_width="@dimen/px620" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px15" android:text="手机号码格式有误"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linear_password" android:background="@drawable/edit_bg_press" android:layout_width="@dimen/px620" android:layout_height="@dimen/px80" android:layout_marginTop="@dimen/px40">
+                    <ImageView android:id="@+id/iv_icon_password" android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:layout_marginLeft="@dimen/px24" android:src="@drawable/login_password" android:scaleType="centerInside"/>
+                    <framework.hz.salmon.view.AutoHiddenHintEditText android:textSize="@dimen/px28" android:textColor="#ff333333" android:textColorHint="#ffb4b7b9" android:id="@+id/password" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px28" android:hint="请输入密码" android:singleLine="true" android:maxLength="16" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:layout_weight="1" android:inputType="textPassword" android:textCursorDrawable="@drawable/cursordrawable_black"/>
+                    <ImageView android:id="@+id/iv_showclearpassword" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/px10" android:layout_marginRight="@dimen/px30" android:src="@drawable/but_close" android:scaleType="centerInside"/>
+                    <ImageView android:id="@+id/iv_clearpassword" android:layout_width="@dimen/px35" android:layout_height="match_parent" android:layout_marginRight="@dimen/px30" android:src="@drawable/but_delete" android:scaleType="centerInside"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/red_color" android:gravity="left" android:id="@+id/tv_password_format" android:paddingLeft="@dimen/px15" android:visibility="gone" android:layout_width="@dimen/px620" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px15" android:text="手机号码格式有误"/>
+                <Button android:enabled="false" android:textSize="@dimen/px32" android:textColor="#ffffffff" android:id="@+id/login" android:background="@drawable/loginbutton_circle_grey" android:layout_width="@dimen/px620" android:layout_height="@dimen/px80" android:layout_marginTop="@dimen/px68" android:layout_marginBottom="@dimen/px60" android:text="登录"/>
+                <RelativeLayout android:layout_width="@dimen/px600" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/px28" android:textColor="#ff03aafe" android:id="@+id/forget_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="忘记密码？"/>
+                    <TextView android:textSize="@dimen/px28" android:textColor="#ff03aafe" android:id="@+id/regist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册新用户" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

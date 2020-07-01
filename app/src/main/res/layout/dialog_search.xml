@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/px18" android:paddingBottom="@dimen/px18" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_search_back" android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:layout_marginLeft="@dimen/px24" android:layout_marginRight="@dimen/px12" android:src="@drawable/nav_back_selector"/>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/key_word_layout" android:background="@drawable/tuoyuan00" android:layout_width="0dp" android:layout_height="@dimen/px64" android:layout_marginRight="@dimen/px23" android:layout_weight="1" android:layout_centerInParent="true">
+                <RelativeLayout android:layout_width="@dimen/px80" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="@dimen/px32" android:layout_height="@dimen/px32" android:src="@drawable/search1" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <EditText android:textSize="@dimen/px28" android:textColor="#ff333333" android:textColorHint="#ffaaaaaa" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/et_search_keyword" android:background="@null" android:paddingRight="37dp" android:layout_width="@dimen/px400" android:layout_height="wrap_content" android:hint="搜索关键字" android:singleLine="true" android:maxLength="20" android:layout_centerInParent="true" android:inputType="textAutoComplete" android:imeOptions="actionDone"/>
+                <RelativeLayout android:id="@+id/delete_layout" android:visibility="gone" android:layout_width="@dimen/px80" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                    <ImageView android:layout_width="@dimen/px32" android:layout_height="@dimen/px32" android:src="@drawable/delete" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/px28" android:textColor="#ff4177d7" android:id="@+id/iv_search_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px24" android:text="搜索"/>
+        </LinearLayout>
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/rv_search_history" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <View android:id="@+id/search_underline" android:background="@color/divider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_grey" android:gravity="center" android:id="@+id/tv_search_clean" android:background="@drawable/shape_corner_white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="清空搜索记录"/>
+    </LinearLayout>
+    <View android:id="@+id/view_search_outside" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px24">
+    <FrameLayout android:id="@+id/top_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px30" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/iv_appicon" android:layout_width="@dimen/px120" android:layout_height="@dimen/px120" android:src="@drawable/ic_launcher"/>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/uninstall" android:layout_width="@dimen/px50" android:layout_height="@dimen/px50" android:src="@drawable/cw"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/px35" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_appname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px10" android:text="我最摇摆我最摇摆我最摇摆" android:lines="1" android:layout_below="@+id/top_layout" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

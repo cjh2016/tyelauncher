@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/px26" android:textColor="#fffcfc" android:id="@+id/card_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px189" android:singleLine="true" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="@dimen/px26" android:textColor="#fffcfc" android:id="@+id/card_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px150" android:singleLine="true"/>
+    <TextView android:textSize="@dimen/px26" android:textColor="#b3fffcfc" android:id="@+id/card_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px189" android:singleLine="true"/>
+</FrameLayout>

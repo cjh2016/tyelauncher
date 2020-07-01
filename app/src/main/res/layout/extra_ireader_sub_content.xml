@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textColor="@color/orange" android:id="@+id/text_select_all" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    <TextView android:textSize="18sp" android:textColor="#fff" android:id="@+id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分类1" android:layout_centerHorizontal="true"/>
+    <EditText android:textSize="15sp" android:textColor="#fff" android:textColorHint="#d1d1d1" android:id="@+id/edit_title" android:background="@drawable/bg_i_reader_category_edit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginRight="60dp" android:hint="@string/i_reader_category_title_edit_hint" android:cursorVisible="true"/>
+    <FrameLayout android:id="@+id/sub_container" android:tag="@string/sub_container" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/text_title"/>
+</RelativeLayout>

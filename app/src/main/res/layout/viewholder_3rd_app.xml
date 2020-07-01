@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:id="@+id/activity_main" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.toycloud.launcher.widget.ThirdAppClassifyView android:id="@+id/classify_view" android:paddingLeft="@dimen/px132" android:paddingRight="@dimen/px102" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/px90" android:layout_marginBottom="@dimen/px148" android:splitMotionEvents="false" app:MainSpanCount="6" app:MainClipToPadding="false" app:SubClipToPadding="false" app:DragScaleX="1.1" app:DragScaleY="1.1" app:DragInMergeScaleX="0.9" app:DragInMergeScaleY="0.9"/>
+</RelativeLayout>

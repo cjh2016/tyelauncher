@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@color/bg_base" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/message_icon" android:layout_width="@dimen/px316" android:layout_height="@dimen/px230" android:src="@drawable/ic_empty"/>
+    <TextView android:textSize="15sp" android:textColor="@color/text_color_1" android:id="@+id/tv_net_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px30" android:text="@string/common_net_connect_error_msg"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="12sp" android:textColor="@color/text_color_2" android:gravity="center" android:id="@+id/message_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_no_network_msg"/>
+        <TextView android:textSize="12sp" android:textColor="#0586fe" android:gravity="center" android:id="@+id/tv_goto" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_no_network_msg"/>
+    </LinearLayout>
+</LinearLayout>

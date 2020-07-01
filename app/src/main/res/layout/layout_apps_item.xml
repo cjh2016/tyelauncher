@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_app_logo" android:layout_width="@dimen/px110" android:layout_height="@dimen/px110" android:src="@drawable/icon_etingshuo" android:scaleType="centerCrop"/>
+    <TextView android:textSize="@dimen/px30" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/app_name" android:singleLine="true"/>
+</LinearLayout>

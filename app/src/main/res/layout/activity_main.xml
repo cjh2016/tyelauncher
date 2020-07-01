@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_main" android:background="@drawable/bg_middle_school" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="-5dp" android:layout_marginRight="-5dp" android:splitMotionEvents="false">
+    <com.toycloud.launcher.view.ParallaxViewPager android:id="@+id/mViewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/bottom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px30">
+        <com.rd.PageIndicatorView android:id="@+id/pageIndicatorView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px24" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px240" android:layout_marginBottom="@dimen/px24" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_appicon1" android:background="@drawable/icon_bg" android:padding="@dimen/px12" android:layout_width="@dimen/px162" android:layout_height="@dimen/px162" android:src="@drawable/ic_launcher" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="@dimen/px32" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_appname1" android:layout_width="@dimen/px80" android:layout_height="wrap_content" android:text="应用商店" android:lines="1" android:layout_below="@+id/iv_appicon1" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px240" android:layout_marginBottom="@dimen/px24" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_appicon2" android:background="@drawable/icon_bg" android:padding="@dimen/px12" android:layout_width="@dimen/px162" android:layout_height="@dimen/px162" android:src="@drawable/ic_launcher" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="@dimen/px32" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_appname2" android:layout_width="@dimen/px80" android:layout_height="wrap_content" android:text="浏览器" android:lines="1" android:layout_below="@+id/iv_appicon2" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px240" android:layout_marginBottom="@dimen/px24" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_appicon3" android:background="@drawable/icon_bg" android:padding="@dimen/px12" android:layout_width="@dimen/px162" android:layout_height="@dimen/px162" android:src="@drawable/ic_launcher" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="@dimen/px32" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_appname3" android:layout_width="@dimen/px80" android:layout_height="wrap_content" android:text="照相机" android:lines="1" android:layout_below="@+id/iv_appicon3" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px24" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_appicon4" android:background="@drawable/icon_bg" android:padding="@dimen/px12" android:layout_width="@dimen/px162" android:layout_height="@dimen/px162" android:src="@drawable/ic_launcher" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="@dimen/px32" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_appname4" android:layout_width="@dimen/px80" android:layout_height="wrap_content" android:text="个人中心" android:lines="1" android:layout_below="@+id/iv_appicon4" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/user_center" android:layout_width="180dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px48">
+        <View android:id="@+id/blank_top_view" android:layout_width="1dp" android:layout_height="32dp"/>
+        <ImageView android:id="@+id/head" android:layout_width="@dimen/px120" android:layout_height="@dimen/px120" android:src="@drawable/pic_tx_default" android:scaleType="fitXY" android:layout_below="@+id/blank_top_view" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/img_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px16" android:src="@drawable/shape_dot" android:layout_alignTop="@+id/head" android:layout_alignRight="@+id/head"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/user_name_ll" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/head" android:layout_alignTop="@+id/head" android:layout_alignBottom="@+id/head">
+            <TextView android:textSize="@dimen/px32" android:textColor="#ff2bddf6" android:ellipsize="end" android:layout_gravity="right" android:id="@+id/main_page_user_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="4"/>
+            <TextView android:textSize="@dimen/px35" android:textColor="#ff2bddf6" android:ellipsize="end" android:layout_gravity="right" android:id="@+id/user_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px4" android:text="点击登录2" android:maxLines="1" android:maxEms="4"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@+id/study_report_update_dot_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:layout_marginRight="-20dp" android:src="@mipmap/study_report_update_notice" android:layout_toLeftOf="@+id/head" android:layout_alignTop="@+id/head"/>
+    </RelativeLayout>
+</FrameLayout>

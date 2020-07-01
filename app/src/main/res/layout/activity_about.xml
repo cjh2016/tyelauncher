@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" layout="@layout/common_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/px344" android:layout_height="@dimen/px80" android:layout_marginTop="@dimen/px60" android:src="@drawable/ic_launcher"/>
+        <TextView android:textSize="@dimen/px32" android:textColor="#ff333333" android:gravity="center" android:id="@+id/version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px24" android:text="家教机"/>
+        <TextView android:textSize="@dimen/px32" android:textColor="#ff555555" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px24" android:layout_marginTop="@dimen/px100" android:layout_marginRight="@dimen/px24" android:text="产品信息" android:lineSpacingExtra="@dimen/px10"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/px28" android:textColor="#ff888888" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px48" android:layout_marginBottom="@dimen/px24" android:text="淘云科技\100551-66666666\10Copyright©2017 .\10All Rights Reserved." android:layout_alignParentBottom="true" android:lineSpacingExtra="@dimen/px10"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/top" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="@dimen/px100" android:layout_alignParentTop="true">
+    <ImageView android:id="@+id/left_btn" android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:layout_marginLeft="@dimen/px24" android:layout_marginRight="@dimen/px48" android:src="@drawable/nav_back_selector" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+    <Button android:textSize="@dimen/px28" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="right" android:id="@+id/left_text_btn" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px24" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.gc.materialdesign.views.ButtonFlat android:textSize="@dimen/px36" android:gravity="center" android:id="@+id/right_btn" android:background="#ff333333" android:layout_width="@dimen/px120" android:layout_height="@dimen/px80" android:text="a"/>
+        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/right_image_btn" android:visibility="gone" android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/px36" android:textColor="#ff333333" android:gravity="center" android:id="@+id/title" android:paddingLeft="@dimen/px36" android:paddingRight="@dimen/px36" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="标题" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

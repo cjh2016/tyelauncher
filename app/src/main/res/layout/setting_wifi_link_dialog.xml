@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/wifidialog_up_corner" android:layout_width="@dimen/px600" android:layout_height="@dimen/px306">
+        <TextView android:textSize="@dimen/px34" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/wifi_title" android:background="@drawable/wifidialog_up_corner" android:layout_width="match_parent" android:layout_height="@dimen/px117"/>
+        <EditText android:textSize="@dimen/px28" android:textColor="@color/black_home" android:layout_gravity="center_horizontal" android:id="@+id/password_edit" android:background="@drawable/wifidialog_center_edit" android:paddingLeft="@dimen/px15" android:paddingRight="@dimen/px30" android:layout_width="@dimen/px541" android:layout_height="@dimen/px60" android:hint="请输入WIFI密码" android:lines="1" android:drawableRight="@drawable/but_close" android:inputType="textPassword" android:textCursorDrawable="@drawable/editcursor"/>
+        <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/px30"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/px100">
+            <Button android:textSize="14sp" android:textColor="#2a8afb" android:gravity="center" android:id="@+id/cancel_button" android:layout_width="0dp" android:layout_height="match_parent" android:text="取消" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+            <View android:background="#e6e6e6" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:id="@+id/cofirm_button" android:layout_width="0dp" android:layout_height="match_parent" android:text="连接" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

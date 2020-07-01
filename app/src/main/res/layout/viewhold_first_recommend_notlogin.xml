@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_need_login" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rel_main" android:background="@drawable/tu_launcher" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/view_half_tru" android:background="#99000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px70" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_notice_top" android:background="@drawable/launcher_kuang_notice" android:paddingTop="@dimen/px18" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px10" android:text="点击开始精准学习" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/iv_start" android:layout_width="@dimen/px460" android:layout_height="@dimen/px160" android:src="@drawable/intorecommd_animlist" android:layout_below="@+id/tv_notice_top" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/rel_guider_first" android:background="@drawable/guider_first" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

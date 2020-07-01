@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/activity_main" android:background="#fff2f2f2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="240dp" android:layout_height="match_parent" layout="@layout/activity_user_center_left_layout"/>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/activity_user_center_right_layout"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/rootSelector" android:background="#55000000" android:padding="40dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentSelector" android:background="@drawable/dialog_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <View android:id="@+id/viewColor" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <LinearLayout android:orientation="vertical" android:background="#fff" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="#4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="R"/>
+                <com.gc.materialdesign.views.Slider android:id="@+id/red" android:background="#4d4d4d" android:layout_width="match_parent" android:layout_height="wrap_content" card_view:showNumberIndicator="true" card_view:max="255" card_view:min="0"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <TextView android:textSize="17sp" android:textColor="#4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="G"/>
+                <com.gc.materialdesign.views.Slider android:id="@+id/green" android:background="#4d4d4d" android:layout_width="match_parent" android:layout_height="wrap_content" card_view:showNumberIndicator="true" card_view:max="255" card_view:min="0"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <TextView android:textSize="17sp" android:textColor="#4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="B"/>
+                <com.gc.materialdesign.views.Slider android:id="@+id/blue" android:background="#4d4d4d" android:layout_width="match_parent" android:layout_height="wrap_content" card_view:showNumberIndicator="true" card_view:max="255" card_view:min="0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

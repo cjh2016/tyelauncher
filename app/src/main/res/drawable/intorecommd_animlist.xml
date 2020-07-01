@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru1" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru2" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru3" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru4" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru5" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru6" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru7" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru8" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru9" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru10" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru11" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru12" />
+    <item android:duration="200" android:drawable="@mipmap/btn_jinru13" />
+</animation-list>

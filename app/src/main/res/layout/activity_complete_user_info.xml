@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="#fff6f6f6" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:background="@drawable/bg_information" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="43dp" android:layout_marginTop="26dp">
+                    <ImageView android:id="@+id/iv_back_information" android:background="@drawable/back_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp"/>
+                    <TextView android:textSize="18sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人信息完善" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_setting_information" android:paddingLeft="@dimen/px140" android:paddingTop="@dimen/px78" android:paddingRight="@dimen/px100" android:paddingBottom="@dimen/px32" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px14">
+                    <RelativeLayout android:layout_width="@dimen/px640" android:layout_height="wrap_content">
+                        <View android:background="#ffebebec" android:layout_width="match_parent" android:layout_height="@dimen/px2" android:layout_alignParentBottom="true"/>
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px28" android:layout_marginBottom="@dimen/px28">
+                            <ImageView android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:src="@drawable/icon_personal_name"/>
+                            <TextView android:textSize="@dimen/px30" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px8" android:text="姓名：" android:layout_alignParentRight="true"/>
+                            <framework.hz.salmon.view.AutoHiddenHintEditText android:textSize="@dimen/px32" android:textColor="#ff000000" android:textColorHint="#cccccc" android:id="@+id/user_name" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="请输入姓名"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/user_grade_layout" android:layout_width="@dimen/px640" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px178">
+                        <View android:background="#ffebebec" android:layout_width="match_parent" android:layout_height="@dimen/px2" android:layout_alignParentBottom="true"/>
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px28" android:layout_marginBottom="@dimen/px28">
+                            <ImageView android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:src="@drawable/icon_personal_grade"/>
+                            <TextView android:textSize="@dimen/px30" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px8" android:text="年级：" android:layout_alignParentRight="true"/>
+                            <TextView android:textSize="@dimen/px32" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/user_grade_value" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请选择年级"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/px14">
+                    <RelativeLayout android:layout_width="@dimen/px640" android:layout_height="wrap_content">
+                        <View android:background="#ffebebec" android:layout_width="match_parent" android:layout_height="@dimen/px2" android:layout_alignParentBottom="true"/>
+                        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_sex_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px28" android:layout_marginBottom="@dimen/px28">
+                            <ImageView android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:src="@drawable/icon_personal_gender"/>
+                            <TextView android:textSize="@dimen/px30" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px8" android:text="性别：" android:layout_alignParentRight="true"/>
+                            <TextView android:textSize="@dimen/px32" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/user_sex_value" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请选择性别"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="@dimen/px640" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px178">
+                        <View android:background="#ffebebec" android:layout_width="match_parent" android:layout_height="@dimen/px2" android:layout_alignParentBottom="true"/>
+                        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_city_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px28" android:layout_marginBottom="@dimen/px28">
+                            <ImageView android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:src="@drawable/icon_personal_city"/>
+                            <TextView android:textSize="@dimen/px30" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px8" android:text="城市：" android:layout_alignParentRight="true"/>
+                            <TextView android:textSize="@dimen/px32" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/user_city_value" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请选择城市"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="@dimen/px640" android:layout_height="wrap_content">
+                        <View android:background="#ffebebec" android:layout_width="match_parent" android:layout_height="@dimen/px2" android:layout_alignParentBottom="true"/>
+                        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_birthday_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px28" android:layout_marginBottom="@dimen/px28">
+                            <ImageView android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:src="@drawable/icon_personal_birth"/>
+                            <TextView android:textSize="@dimen/px30" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px8" android:text="生日：" android:layout_alignParentRight="true"/>
+                            <TextView android:textSize="@dimen/px32" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/user_birthday_value" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请设置生日"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="@dimen/px640" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px178">
+                        <View android:background="#ffebebec" android:layout_width="match_parent" android:layout_height="@dimen/px2" android:layout_alignParentBottom="true"/>
+                        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_school_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px28" android:layout_marginBottom="@dimen/px28">
+                            <ImageView android:layout_width="@dimen/px48" android:layout_height="@dimen/px48" android:src="@drawable/icon_personal_school"/>
+                            <TextView android:textSize="@dimen/px30" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px8" android:text="学校：" android:layout_alignParentRight="true"/>
+                            <TextView android:textSize="@dimen/px32" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/user_school_value" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请选择学校"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <Button android:enabled="false" android:textSize="@dimen/px35" android:textColor="#fff7f7f7" android:layout_gravity="center_horizontal" android:id="@+id/save" android:background="@drawable/loginbutton_circle_grey" android:layout_width="@dimen/px580" android:layout_height="@dimen/px80" android:layout_marginTop="@dimen/px70" android:text="下一步"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

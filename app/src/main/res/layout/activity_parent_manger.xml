@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rel_login_up" android:background="#fff" android:layout_width="match_parent" android:layout_height="@dimen/px115" android:elevation="@dimen/px3">
+        <View android:id="@+id/view_tool" android:layout_width="match_parent" android:layout_height="@dimen/px48"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/px73" android:layout_below="@+id/view_tool">
+            <ImageView android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="@dimen/px50" android:layout_marginLeft="@dimen/px30" android:src="@drawable/fanhui" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/px24" android:textStyle="bold" android:textColor="#333333" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="家长管理" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rel_login_up">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/px320" android:layout_height="@dimen/px320" android:layout_marginTop="@dimen/px100" android:src="@drawable/erweima_icon"/>
+        <TextView android:textSize="@dimen/px32" android:textColor="#333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/px40" android:text="扫描二维码关注公众号"/>
+        <TextView android:textSize="@dimen/px28" android:textColor="#333333" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="@dimen/px476" android:layout_height="@dimen/px85" android:layout_marginTop="@dimen/px20" android:text="绑定学习机后，可了解孩子学习状况，并对学习机进行管理。" android:lineSpacingMultiplier="1.2"/>
+        <TextView android:textSize="@dimen/px28" android:textColor="#333333" android:gravity="left" android:layout_gravity="center_horizontal" android:layout_width="@dimen/px1247" android:layout_height="@dimen/px126" android:layout_marginTop="@dimen/px72" android:text="绑定步骤：\10 1.用手机微信扫描二维码，并关注上方微信公众号\10 2.打开公众号，点击右下角家长管理，再次扫描“个人中心”右上角“家长管理”的绑定学习机二维码完成绑定" android:lineSpacingMultiplier="1.2"/>
+    </LinearLayout>
+</RelativeLayout>

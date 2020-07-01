@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/btn_10s" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="10秒"/>
+    <Button android:id="@+id/btn_30s" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="30秒"/>
+    <Button android:id="@+id/btn_1m" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1分钟"/>
+    <Button android:id="@+id/btn_now" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="现在"/>
+    <Button android:id="@+id/btn_prev" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="退后5秒"/>
+    <Button android:id="@+id/remove_first" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="删除第一个"/>
+</LinearLayout>

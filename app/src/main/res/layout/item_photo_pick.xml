@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/photo_pick_rl" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" card_view:placeholderImageScaleType="6" card_view:failureImage="@drawable/failure_image" card_view:failureImageScaleType="5" card_view:actualImageScaleType="6" card_view:pressedStateOverlayImage="@color/fresco_image_press"/>
+    <android.support.v7.widget.AppCompatCheckBox android:theme="@style/PhoCheckBox" android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin_4dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/gifIcon" android:layout_width="36dp" android:layout_height="30dp" android:layout_margin="@dimen/layout_margin_4dp" android:src="@drawable/gif_icon" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="#fff" android:padding="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/restart_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/px24" android:text="重启应用" android:layout_weight="0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/restart_button">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/customactivityoncrash_error_image" android:contentDescription="@null"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对不起，程序出现异常"/>
+            <TextView android:textStyle="bold" android:id="@+id/show_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="查看错误"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

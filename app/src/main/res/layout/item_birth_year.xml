@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/px50">
+    <TextView android:textSize="@dimen/px18" android:textColor="#323232" android:gravity="center" android:id="@+id/tempValue" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/px10"/>
+    <View android:background="#efeff0" android:layout_width="match_parent" android:layout_height="@dimen/px2"/>
+</LinearLayout>
